@@ -104,3 +104,24 @@ footer ul li a {
     color: var(--color-1);
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .hero {
+        width: 100%;
+        padding: 0 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+    .hero div {
+        padding: 10px 0;
+    }
+    .container-videos {
+        width: 100%;
+        padding: 0 10px;
+    }
+    #videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+}
